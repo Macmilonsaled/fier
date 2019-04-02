@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:id="@+id/l0"
+    style="@style/AppTheme"
+    android:weightSum="1">
+
+
+    <EditText
+        android:text="0"
+        android:background="@color/foreground"
+        android:textColor="@color/text"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:id="@+id/et1"
+        android:layout_weight="0.50"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:text="0"
+        android:background="@color/foreground"
+        android:textColor="@color/text"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:id="@+id/et2"
+        android:layout_weight="0.50"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.15">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="345dp"
+            android:id="@+id/listView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.30"
+            android:background="@color/background_select"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.15">
+
+        <Button
+            android:text="+"
+            android:textSize="@dimen/text"
+            android:textAllCaps="false"
+            android:background="@color/background"
+            android:textColor="@color/text"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/bp"
+            android:onClick="bp"/>
+        <Button
+            android:text="-"
+            android:textSize="@dimen/text"
+            android:textAllCaps="false"
+            android:background="@color/background"
+            android:textColor="@color/text"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/bm"
+            android:onClick="bm"/>
+
+        <Button
+            android:text="*"
+            android:textSize="@dimen/text"
+            android:textAllCaps="false"
+            android:background="@color/background"
+            android:textColor="@color/text"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/bx"
+            android:onClick="bx"/>
+        <Button
+            android:text="/"
+            android:textSize="@dimen/text"
+            android:textAllCaps="false"
+            android:background="@color/background"
+            android:textColor="@color/text"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/bd"
+            android:onClick="bd"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Clear"
+        android:textSize="@dimen/text"
+        android:textAllCaps="false"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:layout_height="wrap_content"
+        android:id="@+id/bClear" />
+
+</LinearLayout>
